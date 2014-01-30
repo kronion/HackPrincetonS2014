@@ -22,24 +22,51 @@
 
 </head>
 <body>
+      <script src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".logolink").click(function()
+        {
+            blurb_toggle("#" + $(this).attr('id')); 
+        }); 
+    });
+    function blurb_toggle(param)
+    {
+        //alert($(param).parent()); 
+
+        $(param).parent().children(".sponsors-box-wrapper").toggle({
+            duration:400,
+        }); 
+    }
+
+  </script>
+
 <div class="header slide1" >
+    <div class="outer-title">
+        <div class="inner-title">
 
+        <div class="container-center">
             <img class="is-center" src="img/title_text.png">
+        </div>
+        </div>
+    </div>
+    <div class="pull-left"><img src="img/left.png"></div>   
+    <img class="pull-right" src="img/right.png">
+                <h1 class="white-text"> YOU AND YOUR IDEAS. <br> MARCH 28 - 30th </h1> 
 
-    <div class="pull-left"><img src="img/left.png"></div>
-    <div class="is-center"><h1 class="white-text"> YOU AND YOUR IDEAS. <br> MARCH 28 - 30th </h1> </div>
-    <img class ="pull-right" src="img/right.png">
-</div>
+
+ </div>
+
 
 
 <div class="content-wrapper">
     <div class="content">
-    <img src="img/banner-top.png">
-    <img src="img/banner-top.png">
 
+    <div class="banner-top"></div>
         <h2 class="content-head is-center">36+ HOURS. 500+ HACKERS. 60+ UNIVERSITIES</h2>
+    <div class="banner-bot"></div>
     
-    <img src="img/banner-bot.png">    <img src="img/banner-bot.png">
+    
 
 
     </div>
@@ -52,7 +79,7 @@
         <h2 class="content-head is-center">FAQ</h2>
     <div class="unit unit-shaded">
 
-      <div class="container-inner pure-g">
+      <div class="container-inner pure-g-r">
 
         <div class="separator"></div>
         <div class="unit-content pure-u-1-2">
