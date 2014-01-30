@@ -1,0 +1,28 @@
+
+
+.slide1 {
+    background-color: #6EC6B5;
+    height:80vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+.inner-title img, .outer-title{
+    margin-right: auto;
+    margin-left: auto;
+}
+.inner-title {
+        width:500px;
+        padding-top:200px;
+}
+.pull-left {
+    position:absolute;
+    left:0px;
+
+}
+.pull-right {
+    position:absolute;
+    right:0px;
+}
+.container-inner {
+    width:960px;
+}
